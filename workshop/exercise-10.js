@@ -7,3 +7,8 @@
 // #####
 // ######
 // #######
+let str = "";
+for (number = 1; number < 8; number++) {
+    str += "#";
+    console.log(str);
+}

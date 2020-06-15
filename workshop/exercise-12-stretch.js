@@ -12,3 +12,11 @@
 // NOTE: 1 and 2 are both prime numbers.
 
 // EXPECTED OUTPUT: [1, 2, 3, 5, 7, 11, 13, ...]
+let count = 0;
+for (number = 1; number < 201; number++) {
+    if (number % 2 == 0 || number % 3 == 0 || number % 5 == 0 || number % 7 == 0) {
+        if (number / 2 == 1 || number / 3 == 1 || number / 5 == 1 || number / 7 == 1) {
+            console.log(number);
+        }
+    } else {console.log(number);}
+}

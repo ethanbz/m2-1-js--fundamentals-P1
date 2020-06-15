@@ -3,3 +3,10 @@
 // between 0 and 5000
 
 // ANSWER: the number you should see in the console is 3127500
+let sum = 0;
+for (let number = 0; number < 5001; number++) {
+    if (number % 4 ===0) {
+        sum+=number;
+    }
+}
+console.log(sum);

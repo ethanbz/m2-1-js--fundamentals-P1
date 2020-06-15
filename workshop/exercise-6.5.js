@@ -9,3 +9,10 @@
 // ...
 
 // many other possibilities here.
+for (let number = 0; number < 16; number++) {
+    if (number % 2 === 1) {
+        console.log(`${number} is odd`);
+        continue;
+    }
+    console.log(`${number} is even`);
+}

@@ -11,3 +11,16 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+let str = "";
+for (number = 1; number < 73; number++) {
+    if (number%9===0) {
+        str += '\n';
+        continue;
+    }
+    if (number % 2 === 1) {
+        str += '#';
+    } else {
+        str += "_";
+    }
+}
+console.log(str);

@@ -21,3 +21,12 @@
 
 // (Correct answer: 12586269025)
 // (The numbers get big quickly!)
+let fib = [0, 1];
+let count = 1;
+let i;
+for (num = 2; num < 51; num++) {
+    i = fib[count-1] + fib[count];
+    fib.push(i);
+    count++;
+}
+console.log(fib[50]);
